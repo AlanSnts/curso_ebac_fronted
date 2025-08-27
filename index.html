@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site com Header Flutuante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <nav class="nav" aria-label="Primária">
+            <a href="#home" class="brand" aria-label="Ir para início">MinhaMarca</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home" class="hero" role="main" tabindex="-1">
+        <div class="hero-inner">
+            <h1>Experiência Dark Elegante</h1>
+            <p>Header flutuante e banner em tela cheia para um visual moderno.</p>
+            <div class="hero-cta">
+                <a class="btn primary" href="#sobre">Saiba mais</a>
+                <a class="btn" href="#contato">Fale conosco</a>
+            </div>
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+    </main>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre nós</h2>
+            <p>
+                Construído com um cabeçalho escuro, translúcido e com bordas arredondadas.
+                O banner ocupa 100% da altura da janela para imersão total.
+            </p>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo formulário abaixo.</p>
+            <form class="contact-form" action="#" method="post" onsubmit="return false;">
+                <div class="grid">
+                    <label>
+                        <span>Nome</span>
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="voce@exemplo.com" required>
+                    </label>
+                </div>
+                <label>
+                    <span>Mensagem</span>
+                    <textarea name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+                </label>
+                <button class="btn primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <small>© <span id="year"></span> MinhaMarca. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
